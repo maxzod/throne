@@ -11,6 +11,7 @@ class QueenShip {
     }
     for (int i = 0; i < helpersList.length; i++) {
       await helpersList[i].createHelper();
+      print('helper $i is up');
     }
   }
 }
