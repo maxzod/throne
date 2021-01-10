@@ -16,6 +16,7 @@ Stateful Widget you can place it under MaterialApp with three required parameter
 
 
 
+
 batteries included
 * you can use QueenPrefs to load shared preferences instance directly
 so if you willing to user this package for shared preferences only the code will look like this 
@@ -62,6 +63,26 @@ void main() => runApp(
     ),
   );
 ```
+## QueenShip
+The Ship will not sail without the **Queen Helpers** so app wont run until the queenHelpers is ready
+
+
+```dart
+  void main()  {
+
+    QueenShip.sail(helpers:[]); // load your helpers here 
+    // OR
+    QueenShip.sail(); // will load the loyal helpers only for now its just SharedPreferences
+   runApp(
+    MaterialApp(
+      title: 'Long Live The Queen',
+       home: Scaffold(body: Center(child: Text('now you can user all Helpers'))),
+      ),
+   );
+  }
+```
+
+
 
 ## TODO
 * [] bind the helper to services class 
